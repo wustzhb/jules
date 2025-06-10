@@ -1,0 +1,9 @@
+{
+    "name": "project/php-deserialization-tester",
+    "description": "PHP Deserialization Tester",
+    "type": "project",
+    "license": "MIT",
+    "require-dev": {
+        "vimeo/psalm": "5.22.0"
+    }
+}

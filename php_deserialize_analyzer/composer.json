@@ -1,0 +1,14 @@
+{
+    "name": "project/php-deserialize-analyzer",
+    "description": "PHP Deserialization Taint Analyzer",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Project\\PhpDeserializeAnalyzer\\": "src/"
+        }
+    },
+    "require-dev": {
+        "vimeo/psalm": "^5.22"
+    }
+}

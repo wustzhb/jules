@@ -1,0 +1,15 @@
+digraph Taints {
+	"$_GET:test_gadget_destruct.php:467" -> "$_GET['payload']-test_gadget_destruct.php:467-471"
+	"$_GET['payload']-test_gadget_destruct.php:467-471" -> "$user_input-test_gadget_destruct.php:453-463"
+	"$object-test_gadget_destruct.php:959-965" -> "variable-use" -> "call to is_object-test_gadget_destruct.php:959-965"
+	"$object-test_gadget_destruct.php:987-993" -> "variable-use" -> "call to property_exists-test_gadget_destruct.php:987-993"
+	"$this->command-test_gadget_destruct.php:384-397" -> "call to system-test_gadget_destruct.php:384-397"
+	"$user_input-test_gadget_destruct.php:453-463" -> "variable-use" -> "call to unserialize-test_gadget_destruct.php:649-659"
+	"Gadget::$command" -> "$this->command-test_gadget_destruct.php:384-397"
+	"call to echo-test_gadget_destruct.php:888-1033" -> "echo#1-test_gadget_destruct.php:883"
+	"call to is_object-test_gadget_destruct.php:959-965" -> "is_object#1-test_gadget_destruct.php:949"
+	"call to property_exists-test_gadget_destruct.php:987-993" -> "property_exists#1-test_gadget_destruct.php:971"
+	"call to system-test_gadget_destruct.php:384-397" -> "system#1-test_gadget_destruct.php:377"
+	"call to unserialize-test_gadget_destruct.php:649-659" -> "unserialize#1-test_gadget_destruct.php:637"
+	"concat-test_gadget_destruct.php:888-1033" -> "call to echo-test_gadget_destruct.php:888-1033"
+}

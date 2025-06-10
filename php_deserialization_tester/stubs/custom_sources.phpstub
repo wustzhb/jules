@@ -1,0 +1,9 @@
+<?php
+
+/**
+ * @psalm-taint-source input <mycustomtaint>
+ */
+function get_custom_input(): string {
+    // In a real scenario, this would read from somewhere
+    return $_POST['custom_payload'] ?? '';
+}
